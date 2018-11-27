@@ -1,0 +1,1 @@
+k-pintar-smart-pos

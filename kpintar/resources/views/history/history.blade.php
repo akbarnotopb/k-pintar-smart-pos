@@ -6,12 +6,71 @@
         table>tbody>tr>td.center-tab{
             vertical-align: middle;
         }
+
+        .text-right{
+            text-align: right;
+        }
     </style>
 
 @endsection
 
 @section('realpage')
        <div id="page-wrapper">
+
+            <div class="modal fade" id="myInfoModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 class="modal-title">Detail Transaksi 1/22/18/1</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Nomor Transaksi&emsp;&ensp;&nbsp;: 1/22/18/1</p>
+                        <p>Tanggal Transaksi&emsp;&nbsp;: 19/11/2018</p>
+                        <p>Nama Karyawan&emsp;&emsp;: Sukirman</p>
+                        <br>
+                        <p class="modal-title">Daftar Belanja</p>
+                          <table class="table table-striped table-bordered table-hover">
+                              <thead>
+                                  <tr>
+                                      <th>Kode Barang</th>
+                                      <th>Nama Barang</th>
+                                      <th>Jumlah</th>
+                                      <th>Harga Satuan</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="odd">
+                                      <td>1</td>
+                                      <td>Koka Kola</td>
+                                      <td>12</td>
+                                      <td>5000</td>
+                                  </tr>
+                                  <tr class="even">
+                                      <td>3</td>
+                                      <td>Biskuwit Singa</td>
+                                      <td>1</td>
+                                      <td>12000</td>
+                                  </tr>
+                                  <tr class="odd">
+                                      <td>2</td>
+                                      <td>Worses Cookies</td>
+                                      <td>8</td>
+                                      <td>1000</td>
+                                  </tr>                                                            
+                              </tbody>
+                          </table>
+                          <p class="text-right" style="font-size: 24px"><strong>Total : Rp.10000</strong></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Riwayat Transaksi</h1>
@@ -47,7 +106,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">100.000</td>
                                         <td class="center" style="">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -59,7 +118,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">11.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -71,7 +130,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">132.500</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -83,7 +142,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">100.150</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -95,7 +154,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">182.120</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -107,7 +166,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">199.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -119,7 +178,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">12.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -131,7 +190,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">300.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -143,7 +202,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">20.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -155,7 +214,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">10.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -167,7 +226,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">102.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -179,7 +238,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">91.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -191,7 +250,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">100.400</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -203,7 +262,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">112.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 
@@ -215,7 +274,7 @@
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">10.000</td>
                                         <td class="center">
-                                            <button  class="btn btn-success edit">Detail</button>
+                                            <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
                                             <button class="btn btn-danger edit">Delete</button>
 

@@ -20,7 +20,7 @@ Route::name('admin.')->group(function(){
 
 	Route::view('/admin/dashboard','dashboard.dashboard')->name('dashboard');
 
-	Route::view('/admin/history/profit','history.profitchart')->name('recap-history');
+	Route::view('/admin/history/profit','history.profit-chart')->name('recap-history');
 
 
 	Route::view('/admin/history','history.history')->name('history');

@@ -4,6 +4,7 @@
 	@include('shared.partial.meta')
 	<title>SB Admin 2 - Bootstrap Admin Theme</title>
 	@include('shared.partial.stylesheet')
+	@yield('additional-css')
 </head>
 <body>
 	<div id="wrapper">

@@ -17,7 +17,7 @@
 @section('realpage')
        <div id="page-wrapper">
             {{-- Modal info --}}
-            <div class="modal fade" id="myInfoModal" role="dialog">
+             <div class="modal fade" id="myInfoModal" role="dialog">
                 <div class="modal-dialog">
 
                   <!-- Modal content-->
@@ -71,8 +71,98 @@
                   </div>
                   
                 </div>
-            </div>
+             </div>
             {{-- Modal end --}}
+
+            {{-- Modal Edit --}}
+             <div class="modal fade" id="myEditModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 class="modal-title">Detail Transaksi 1/22/18/1</h4>
+                    </div>
+                    <div class="modal-body">
+                            <form method="POST">
+                                <div class="form-group row">
+                                    <label for="idnama" class="col-md-4">No Transaksi</label>
+                                    <div class="col-md-8">
+                                        <input type="text" name="nama" class="form-control" id="idnama" value="1/2/18/1" disabled="">
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4" for="idtgllahir">Tanggal Transaksi</label>
+                                    <div class="col-md-8">
+                                        <input type="date" name="tanggallahir" class="form-control" id="idtgllahir" value="2018-11-19" disabled>
+                                    </div>
+                                </div>  
+                                <div class="form-group row">
+                                    <label for="idtptlahir" class="col-md-4">Karyawan</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control">
+                                            <option>Sukirman</option>
+                                            <option>Paijo</option>
+                                            <option>Ferguso</option>
+                                        </select>
+                                    </div>
+                                </div>                                                                 
+                                 <div class="form-group row">
+                                    <label class="col-md-4" for="idtgllahir">Member</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control">
+                                            <option>Ayas Fakar Nais</option>
+                                            <option>Steve Ferguzo</option>
+                                            <option>Hamba Allah</option>
+                                        </select>
+                                    </div>
+                                </div> 
+
+                            </form> 
+                            <p class="modal-title"><strong>Daftar Belanja</strong></p>
+                              <table class="table table-striped table-bordered table-hover">
+                                  <thead>
+                                      <tr>
+                                          <td>Kode Barang</td>
+                                          <td>Nama Barang</td>
+                                          <td>Jumlah</td>
+                                          <td>Harga Satuan</td>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr class="odd">
+                                          <td>1</td>
+                                          <td>Koka Kola</td>
+                                          <td>12</td>
+                                          <td>5000</td>
+                                      </tr>
+                                      <tr class="even">
+                                          <td>3</td>
+                                          <td>Biskuwit Singa</td>
+                                          <td>1</td>
+                                          <td>12000</td>
+                                      </tr>
+                                      <tr class="odd">
+                                          <td>2</td>
+                                          <td>Worses Cookies</td>
+                                          <td>8</td>
+                                          <td>1000</td>
+                                      </tr>                                                            
+                                  </tbody>
+                              </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Batal</button>
+                      <button type="submit" class="btn btn-primary" onclick="window.location.href='{{ Route('admin.history') }}'">Simpan</button>
+                    </div>
+                  </div>
+                  
+                </div>
+             </div>
+            {{-- Modal end --}}
+
 
             {{-- Modal Delete All --}}
               <div class="modal fade" id="myDeleteAllModal" role="dialog">
@@ -91,7 +181,6 @@
               </div>
 
             {{-- Modal end --}}
-
 
 
             {{-- Modal Delete Choosen --}}
@@ -149,7 +238,7 @@
                                         <td class="center center-tab">100.000</td>
                                         <td class="center" style="">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -161,7 +250,7 @@
                                         <td class="center center-tab">11.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
                                         </td>
                                     </tr>
@@ -172,7 +261,7 @@
                                         <td class="center center-tab">132.500</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -184,7 +273,7 @@
                                         <td class="center center-tab">100.150</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -196,7 +285,7 @@
                                         <td class="center center-tab">182.120</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -208,7 +297,7 @@
                                         <td class="center center-tab">199.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -220,7 +309,7 @@
                                         <td class="center center-tab">12.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -232,7 +321,7 @@
                                         <td class="center center-tab">300.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -244,7 +333,7 @@
                                         <td class="center center-tab">20.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -256,7 +345,7 @@
                                         <td class="center center-tab">10.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -268,7 +357,7 @@
                                         <td class="center center-tab">102.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -280,7 +369,7 @@
                                         <td class="center center-tab">91.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -292,7 +381,7 @@
                                         <td class="center center-tab">100.400</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -304,7 +393,7 @@
                                         <td class="center center-tab">112.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
@@ -316,7 +405,7 @@
                                         <td class="center center-tab">10.000</td>
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
-                                            <button class="btn btn-warning edit">Edit</button>
+                                            <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                             <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>

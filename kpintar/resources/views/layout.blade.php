@@ -9,6 +9,7 @@
 <body>
 	<div id="wrapper">
 		@include('shared.partial.navbar')
+		@include('shared.partial.profilechange')
 		@yield('realpage')
 	</div>
 

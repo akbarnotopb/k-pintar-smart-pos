@@ -79,10 +79,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-cogs"></i></i> Ubah Profil</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench"></i></i> Ubah Password</a>
+                            <a href="#" data-backdrop="static" data-toggle="modal" data-target="#myProfile"><i class="fa fa-cogs"></i></i> Ubah Profil / Password</a>
                         </li>
                     </ul>
                 </div>

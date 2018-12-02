@@ -28,7 +28,7 @@
                     </div>
                     <div class="modal-body">
                         <p>Nomor Transaksi&emsp;&ensp;&nbsp;: 1/22/18/1</p>
-                        <p>Tanggal Transaksi&emsp;&nbsp;: 19/11/2018</p>
+                        <p>Waktu Transaksi&emsp;&emsp;: 19/11/2018 09:09 WIB</p>
                         <p>Nama Karyawan&emsp;&emsp;: Sukirman</p>
                         <p>Nama Member&ensp;&nbsp;&emsp;&emsp;: -</p>
                         <br>
@@ -96,7 +96,7 @@
                                 <div class="form-group row">
                                     <label class="col-md-4" for="idtgllahir">Tanggal Transaksi</label>
                                     <div class="col-md-8">
-                                        <input type="date" name="tanggallahir" class="form-control" id="idtgllahir" value="2018-11-19" disabled>
+                                        <input type="datetime-local" name="tanggallahir" class="form-control" id="idtgllahir" value="2018-11-19T09:09:09" disabled>
                                     </div>
                                 </div>  
                                 <div class="form-group row">
@@ -224,7 +224,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nomer Transaksi</th>
-                                        <th>Tanggal</th>
+                                        <th>Waktu Transaksi</th>
                                         <th>Karyawan</th>
                                         <th>Total</th>
                                         <th>Option</th>
@@ -233,7 +233,7 @@
                                 <tbody>
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/1</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">100.000</td>
                                         <td class="center" style="">
@@ -245,7 +245,7 @@
                                     </tr>
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/2</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">11.000</td>
                                         <td class="center">
@@ -256,7 +256,7 @@
                                     </tr>
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/3</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">132.500</td>
                                         <td class="center">
@@ -268,7 +268,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/4</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">100.150</td>
                                         <td class="center">
@@ -280,7 +280,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/5</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">182.120</td>
                                         <td class="center">
@@ -292,7 +292,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/6</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">199.000</td>
                                         <td class="center">
@@ -304,7 +304,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/7</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">12.000</td>
                                         <td class="center">
@@ -316,7 +316,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/8</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">300.000</td>
                                         <td class="center">
@@ -328,7 +328,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/9</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">20.000</td>
                                         <td class="center">
@@ -340,7 +340,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/10</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">10.000</td>
                                         <td class="center">
@@ -352,7 +352,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/11</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">102.000</td>
                                         <td class="center">
@@ -364,7 +364,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/12</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">91.000</td>
                                         <td class="center">
@@ -376,7 +376,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/13</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">100.400</td>
                                         <td class="center">
@@ -388,7 +388,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/14</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">112.000</td>
                                         <td class="center">
@@ -400,7 +400,7 @@
                                     </tr>  
                                     <tr class="odd gradeX" >
                                         <td class="center-tab">1/22/18/15</td>
-                                        <td class="center-tab">19/11/2018</td>
+                                        <td class="center-tab">19/11/2018 09:09:09</td>
                                         <td class="center-tab">Sukirman</td>
                                         <td class="center center-tab">10.000</td>
                                         <td class="center">

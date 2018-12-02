@@ -22,12 +22,13 @@ Route::name('admin.')->group(function(){
 
 	Route::view('/admin/history/profit','history.profit-chart')->name('recap-history');
 
-
 	Route::view('/admin/history','history.history')->name('history');
 
 	Route::view('/admin/product','product.product')->name('product');
 
-	Route::view('/admin/product/add','product.product-add')->name('product-add');
+    Route::view('/admin/product/add','product.product-add')->name('product-add');
+
+	Route::view('/admin/product/history','product.product-history')->name('product-history');
 
 	Route::view('/admin/member','member.member')->name('member');
 

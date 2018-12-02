@@ -36,6 +36,9 @@
                                 <li>
                                     <a href="{{ Route('admin.product-add') }}">Tambahkan Barang</a>
                                 </li>
+                                <li>
+                                    <a href="{{ Route('admin.product-history') }}">Riwayat Keluar Masuk Barang</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

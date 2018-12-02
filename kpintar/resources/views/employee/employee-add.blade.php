@@ -2,8 +2,8 @@
 @section('realpage')
 <div id="page-wrapper">
     <div id="page-wrapper">
-        <h3>Tambah Member</h3>
-        <form>
+        <h3>Tambah Karyawan</h3>
+        <form action="{{ Route('admin.employee')  }}">
             <div class="form-group">
                 <label>Username</label>
                 <input type="text" class="form-control" placeholder="Username">

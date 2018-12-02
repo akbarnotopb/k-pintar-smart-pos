@@ -25,15 +25,15 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">Edit Karyawan</h4>
                     </div>
-                    <div class="modal-body">
-                        <form>
+                    <form action="{{ Route('admin.employee')  }}">
+                        <div class="modal-body">
                             <div class="form-group">
                                 <label>Username</label>
-                                <input type="text" class="form-control" value="Sukirman" placeholder="Username">
+                                <input type="text" class="form-control" value="Sukirman" placeholder="Username" required>
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" value="passrahasia" placeholder="Password">
+                                <input type="password" class="form-control" value="passrahasia" placeholder="Password" required>
                             </div>
                             <div class="form-group">
                                 <label>Status</label>
@@ -45,11 +45,11 @@
                             </div>
                             <div class="form-group">
                                 <label>Alamat</label>
-                                <input type="text" class="form-control" value="Jalan Kenangan blok B1" placeholder="Alamat">
+                                <input type="text" class="form-control" value="Jalan Kenangan blok B1" placeholder="Alamat" required>
                             </div>
                             <div class="form-group">
                                 <label>No. Telp</label>
-                                <input type="text" class="form-control" value="08234567890" placeholder="No. Telp">
+                                <input type="text" class="form-control" value="08234567890" placeholder="No. Telp" required>
                             </div>
                             <div class="form-group">
                                 <label>IsManajer</label>
@@ -58,13 +58,13 @@
                                     <option>Ya</option>
                                 </select>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" data-dismiss="modal">Save</button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Save</button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        </div>
                 </div>
+                </form>
 
             </div>
         </div>

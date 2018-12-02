@@ -25,38 +25,38 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h3 class="modal-title">Edit Member</h4>
                 </div>
-                <div class="modal-body">
-                    <form>
+                <form action="{{ Route('admin.member')  }}">
+                    <div class="modal-body">
                         <div class="form-group">
                             <label>Kode</label>
-                            <input type="text" class="form-control" value="1001" placeholder="Kode">
+                            <input type="text" class="form-control" value="1001" placeholder="Kode" required>
                         </div>
                         <div class="form-group">
                             <label>Nama</label>
-                            <input type="text" class="form-control" value="Sudirman" placeholder="Nama">
+                            <input type="text" class="form-control" value="Sudirman" placeholder="Nama" required>
                         </div>
                         <div class="form-group">
                             <label>Alamat</label>
-                            <input type="text" class="form-control" value="Jalan Kenangan blok A1" placeholder="Alamat">
+                            <input type="text" class="form-control" value="Jalan Kenangan blok A1" placeholder="Alamat" required>
                         </div>
                         <div class="form-group">
                             <label>No. Telp</label>
-                            <input type="text" class="form-control" value="0812345678" placeholder="No. Telp">
+                            <input type="text" class="form-control" value="0812345678" placeholder="No. Telp" required>
                         </div>
                         <div class="form-group">
                             <label>Tanggal Lahir</label>
-                            <input type="text" class="form-control" value="19/11/1995" placeholder="dd/mm/yyyy">
+                            <input type="text" class="form-control" value="19/11/1995" placeholder="dd/mm/yyyy" required>
                         </div>
                         <div class="form-group">
                             <label>Poin</label>
-                            <input type="text" class="form-control" value="50" placeholder="Poin">
+                            <input type="text" class="form-control" value="50" placeholder="Poin" required>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" data-dismiss="modal">Save</button>
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
             </div>
 
         </div>

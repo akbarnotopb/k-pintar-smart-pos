@@ -26,36 +26,49 @@
                 </div>
                 <form action="{{ Route('admin.employee')  }}">
                     <div class="modal-body">
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" class="form-control" value="Sukirman" placeholder="Username" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Username</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="Sukirman" placeholder="Username" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control" value="passrahasia" placeholder="Password" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Status</label>
-                            <select class="form-control">
+                        {{--
+                        <div class="form-group row">
+                            <label class="col-md-4">Password</label>
+                            <div class="col-md-8">
+                                <input type="password" class="form-control" value="passrahasia" placeholder="Password" required>
+                            </div>
+                        </div>--}}
+                        <div class="form-group row">
+                            <label class="col-md-4">Status</label>
+                            <div class="col-md-8">
+                                <select class="form-control">
                                     <option>Aktif</option>
                                     <option>Tidak Aktif</option>
                                     <option>Cuti</option>
                                 </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Alamat</label>
-                            <input type="text" class="form-control" value="Jalan Kenangan blok B1" placeholder="Alamat" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Alamat</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="Jalan Kenangan blok B1" placeholder="Alamat" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>No. Telp</label>
-                            <input type="text" class="form-control" value="08234567890" placeholder="No. Telp" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">No. Telp</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="08234567890" placeholder="No. Telp" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>IsManajer</label>
-                            <select class="form-control">
+                        <div class="form-group row">
+                            <label class="col-md-4">IsManajer</label>
+                            <div class="col-md-8">
+                                <select class="form-control">
                                     <option>Tidak</option>
                                     <option>Ya</option>
                                 </select>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -113,10 +126,11 @@
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading" style="padding-bottom:1%;">
-                    <span style="font-size: 24px">Daftar karyawan</span>
+                    <span style="font-size: 24px">Daftar Karyawan</span>
                     <span style="float:right; margin:0">
-                                <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteAllModal">Hapus Semua</button>
-                            </span>
+                        <button class="btn btn-primary" onclick="window.location.href='{{ Route('admin.employee-add') }}'">Tambah Karyawan</button>
+                        <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteAllModal">Hapus Semua</button>
+                    </span>
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
@@ -124,7 +138,8 @@
                         <thead>
                             <tr>
                                 <th>Username</th>
-                                <th>Password</th>
+                                {{--
+                                <th>Password</th> --}}
                                 <th>Status</th>
                                 <th>Alamat</th>
                                 <th>No. Telp</th>
@@ -135,7 +150,6 @@
                         <tbody>
                             <tr class="odd gradeX">
                                 <td class="center-tab">Sukirman</td>
-                                <td class="center-tab">passrahasia</td>
                                 <td class="center center-tab">Aktif</td>
                                 <td class="center-tab">Jalan Kenangan blok B1</td>
                                 <td class="center center-tab">08234567890</td>
@@ -149,7 +163,6 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <td class="center-tab">Sukarman</td>
-                                <td class="center-tab">passrahasia</td>
                                 <td class="center center-tab">Tidak Aktif</td>
                                 <td class="center-tab">Jalan Kenangan blok B2</td>
                                 <td class="center center-tab">08234567809</td>
@@ -163,7 +176,6 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <td class="center-tab">Sunirman</td>
-                                <td class="center-tab">passrahasia</td>
                                 <td class="center center-tab">Cuti</td>
                                 <td class="center-tab">Jalan Kenangan blok B3</td>
                                 <td class="center center-tab">08234567908</td>
@@ -176,8 +188,7 @@
                                 </td>
                             </tr>
                             <tr class="odd gradeX">
-                                <td class="center-tab">Supermin</td>
-                                <td class="center-tab">passrahasia</td>
+                                <td class="center-tab">Ferguso</td>
                                 <td class="center center-tab">Aktif</td>
                                 <td class="center-tab">Jalan Kenangan blok B4</td>
                                 <td class="center center-tab">08234568907</td>
@@ -190,8 +201,7 @@
                                 </td>
                             </tr>
                             <tr class="odd gradeX">
-                                <td class="center-tab">Sutarmin</td>
-                                <td class="center-tab">passrahasia</td>
+                                <td class="center-tab">Paijo</td>
                                 <td class="center center-tab">Aktif</td>
                                 <td class="center-tab">Jalan Kenangan blok B5</td>
                                 <td class="center center-tab">08234578906</td>

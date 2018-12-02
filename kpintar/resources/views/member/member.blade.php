@@ -27,29 +27,41 @@
                 </div>
                 <form action="{{ Route('admin.member')  }}">
                     <div class="modal-body">
-                        <div class="form-group">
-                            <label>Kode</label>
-                            <input type="text" class="form-control" value="1001" placeholder="Kode" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Kode</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="1001" placeholder="Kode" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Nama</label>
-                            <input type="text" class="form-control" value="Sudirman" placeholder="Nama" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Nama</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="Sudirman" placeholder="Nama" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Alamat</label>
-                            <input type="text" class="form-control" value="Jalan Kenangan blok A1" placeholder="Alamat" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Alamat</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="Jalan Kenangan blok A1" placeholder="Alamat" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>No. Telp</label>
-                            <input type="text" class="form-control" value="0812345678" placeholder="No. Telp" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">No. Telp</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="0812345678" placeholder="No. Telp" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Tanggal Lahir</label>
-                            <input type="text" class="form-control" value="19/11/1995" placeholder="dd/mm/yyyy" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Tanggal Lahir</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="19/11/1995" placeholder="dd/mm/yyyy" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Poin</label>
-                            <input type="text" class="form-control" value="50" placeholder="Poin" required>
+                        <div class="form-group row">
+                            <label class="col-md-4">Poin</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" value="50" placeholder="Poin" required>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -109,8 +121,9 @@
                 <div class="panel-heading" style="padding-bottom:1%;">
                     <span style="font-size: 24px">Daftar Member</span>
                     <span style="float:right; margin:0">
-                                <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteAllModal">Hapus Semua</button>
-                            </span>
+                        <button class="btn btn-primary" onclick="window.location.href='{{ Route('admin.member-add') }}'">Tambah Member</button>
+                        <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteAllModal">Hapus Semua</button>
+                    </span>
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
@@ -213,7 +226,7 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <td class="center-tab">1007</td>
-                                <td class="center-tab">Sugirman</td>
+                                <td class="center-tab">Ayas Faikar Nais</td>
                                 <td class="center-tab">Jalan Kenangan blok A7</td>
                                 <td class="center center-tab">0812345685</td>
                                 <td class="center center-tab">29/11/1995</td>
@@ -227,7 +240,7 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <td class="center-tab">1008</td>
-                                <td class="center-tab">Suqirman</td>
+                                <td class="center-tab">Steve Ferguso</td>
                                 <td class="center-tab">Jalan Kenangan blok A8</td>
                                 <td class="center center-tab">0812345629</td>
                                 <td class="center center-tab">19/11/1997</td>
@@ -241,7 +254,7 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <td class="center-tab">1009</td>
-                                <td class="center-tab">Suyirman</td>
+                                <td class="center-tab">Hamba Allah</td>
                                 <td class="center-tab">Jalan Kenangan blok A9</td>
                                 <td class="center center-tab">0812345650</td>
                                 <td class="center center-tab">19/11/1980</td>

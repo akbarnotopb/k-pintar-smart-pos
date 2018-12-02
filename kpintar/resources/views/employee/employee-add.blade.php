@@ -5,15 +5,15 @@
     <form action="{{ Route('admin.employee')  }}">
         <div class="form-group">
             <label>Username</label>
-            <input type="text" class="form-control" placeholder="Username">
+            <input type="text" class="form-control" placeholder="Username" required>
         </div>
         <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" class="form-control" placeholder="Password" required>
         </div>
         <div class="form-group">
             <label>Re-Enter Password</label>
-            <input type="password" class="form-control" placeholder=" Re-Enter Password">
+            <input type="password" class="form-control" placeholder=" Re-Enter Password" required>
         </div>
         <div class="form-group">
             <label>Status</label>
@@ -25,11 +25,11 @@
         </div>
         <div class="form-group">
             <label>Alamat</label>
-            <input type="text" class="form-control" placeholder="Alamat">
+            <input type="text" class="form-control" placeholder="Alamat" required>
         </div>
         <div class="form-group">
             <label>No. Telp</label>
-            <input type="text" class="form-control" placeholder="No. Telp">
+            <input type="text" class="form-control" placeholder="No. Telp" required>
         </div>
         <div class="form-group">
             <label>IsManajer</label>

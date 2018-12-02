@@ -28,7 +28,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Barang<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-database"></i></i> Barang<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="{{ Route('admin.product') }}">Daftar Barang</a>
@@ -40,7 +40,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Member<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-users"></i> Member<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="{{ Route('admin.member') }}">Daftar Member</a>
@@ -52,7 +52,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Karyawan<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-user-secret"></i></i> Karyawan<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="{{ Route('admin.employee') }}">Daftar Karyawan</a>
@@ -62,6 +62,12 @@
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-cogs"></i></i> Ubah Profil</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench"></i></i> Ubah Password</a>
                         </li>
                     </ul>
                 </div>

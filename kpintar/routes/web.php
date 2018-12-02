@@ -36,7 +36,9 @@ Route::name('admin.')->group(function(){
 
 	Route::view('/admin/employee','employee.employee')->name('employee');
 
-	Route::view('/admin/employee/add','employee.employee-add')->name('employee-add');
+    Route::view('/admin/employee/add','employee.employee-add')->name('employee-add');
+
+	Route::view('/admin/kasir','kasir.kasir')->name('kasir');
 
 
 });

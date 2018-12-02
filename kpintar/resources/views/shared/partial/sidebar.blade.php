@@ -16,6 +16,9 @@
                             <a href="{{ Route('admin.dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
+                            <a href="{{ Route('admin.kasir') }}"><i class="fa fa-shopping-cart fa-fw"></i> Kasir</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Riwayat Transaksi<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>

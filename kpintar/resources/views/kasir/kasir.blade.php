@@ -210,9 +210,7 @@
                             <tbody>
                             <tr class="odd gradeX" >
                                 <td class="center-tab">Worses Cookies</td>
-                                <td class="center-tab col-sm-2">
-                                    <input type="text" class="form-control format-number txt-center"maxlength="20" value="1"/>
-                                </td>
+                                <td class="center-tab col-sm-2">1</td>
                                 <td class="center center-tab">1.000</td>
                                 <td class="center" style="">
                                     <button class="btn btn-danger edit">Delete</button>

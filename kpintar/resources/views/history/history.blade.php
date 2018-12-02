@@ -16,7 +16,7 @@
 
 @section('realpage')
        <div id="page-wrapper">
-
+            {{-- Modal info --}}
             <div class="modal fade" id="myInfoModal" role="dialog">
                 <div class="modal-dialog">
 
@@ -30,6 +30,7 @@
                         <p>Nomor Transaksi&emsp;&ensp;&nbsp;: 1/22/18/1</p>
                         <p>Tanggal Transaksi&emsp;&nbsp;: 19/11/2018</p>
                         <p>Nama Karyawan&emsp;&emsp;: Sukirman</p>
+                        <p>Nama Member&ensp;&nbsp;&emsp;&emsp;: -</p>
                         <br>
                         <p class="modal-title">Daftar Belanja</p>
                           <table class="table table-striped table-bordered table-hover">
@@ -62,7 +63,7 @@
                                   </tr>                                                            
                               </tbody>
                           </table>
-                          <p class="text-right" style="font-size: 24px"><strong>Total : Rp.10000</strong></p>
+                          <p class="text-right" style="font-size: 24px"><strong>Total : Rp.100.000</strong></p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
@@ -71,6 +72,47 @@
                   
                 </div>
             </div>
+            {{-- Modal end --}}
+
+            {{-- Modal Delete All --}}
+              <div class="modal fade" id="myDeleteAllModal" role="dialog">
+                <div class="modal-dialog modal-ml">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Apakah anda yakin menghapus semua riwayat transaksi? </h4>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.history')  }}';">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            {{-- Modal end --}}
+
+
+
+            {{-- Modal Delete Choosen --}}
+              <div class="modal fade" id="myDeleteModal" role="dialog">
+                <div class="modal-dialog modal-ml">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Apakah anda yakin menghapus transaksi no 1/22/18/1? </h4>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.history')  }}';">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            {{-- Modal end --}}
+
+
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Riwayat Transaksi</h1>
@@ -84,7 +126,7 @@
                         <div class="panel-heading" style="padding-bottom:1%;">
                             <span style="font-size: 24px">Daftar Transaksi</span>
                             <span style="float:right; margin:0">
-                                <button class="btn btn-danger">Hapus Semua</button>
+                                <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Hapus Semua</button>
                             </span>
                         </div>
                         <!-- /.panel-heading -->
@@ -108,7 +150,7 @@
                                         <td class="center" style="">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>
@@ -120,8 +162,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
-
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
                                         </td>
                                     </tr>
                                     <tr class="odd gradeX" >
@@ -132,7 +173,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -144,7 +185,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -156,7 +197,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -168,7 +209,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -180,7 +221,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -192,7 +233,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -204,7 +245,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -216,7 +257,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -228,7 +269,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -240,7 +281,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -252,7 +293,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -264,7 +305,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>  
@@ -276,7 +317,7 @@
                                         <td class="center">
                                             <button  class="btn btn-success" data-toggle="modal" data-target="#myInfoModal">Detail</button>
                                             <button class="btn btn-warning edit">Edit</button>
-                                            <button class="btn btn-danger edit">Delete</button>
+                                            <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
                                         </td>
                                     </tr>                                      

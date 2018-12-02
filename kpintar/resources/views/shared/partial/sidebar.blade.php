@@ -40,7 +40,15 @@
                                     <a href="{{ Route('admin.product-add') }}">Tambahkan Barang</a>
                                 </li>
                                 <li>
-                                    <a href="{{ Route('admin.product-history') }}">Riwayat Keluar Masuk Barang</a>
+                                    <a>Riwayat Keluar Masuk<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="{{ Route('admin.product-history-in') }}">Barang Masuk</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ Route('admin.product-history-out') }}">Barang Keluar</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -54,6 +62,7 @@
                                 <li>
                                     <a href="{{ Route('admin.member-add') }}">Tambahkan Member</a>
                                 </li>
+
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

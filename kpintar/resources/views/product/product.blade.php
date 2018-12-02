@@ -15,10 +15,87 @@
 @section('realpage')
 <div id="page-wrapper">
 
+    <div class="modal fade" id="myStokModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Tambah Stok Barang</h4>
+                    </div>
+                    <form action="{{ Route('admin.product')  }}">
+                        <div class="modal-body">
+                            <div class="form-group row">
+                                <label class="col-md-4">Kode Barang</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" value="1" placeholder="Kode Barang" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-4">Nama Barang</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" value="Koka Kola" placeholder="Nama Barang" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-4">Stok</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" placeholder="Stok" value="150" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-success">Tambah</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <div class="modal fade" id="myStokModal2" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Tambah Stok Barang</h4>
+                </div>
+                <form action="{{ Route('admin.product')  }}">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label class="col-md-4">Kode Barang</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control"  placeholder="Kode Barang" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4">Nama Barang</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" placeholder="Nama Barang" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4">Stok</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" placeholder="Stok" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-success">Tambah</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     {{-- Modal edit --}}
     <div class="modal fade" id="myEditModal" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -65,12 +142,12 @@
                         </div>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success">Save</button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
     {{-- Modal end --}} {{-- Modal Delete All --}}
@@ -82,7 +159,7 @@
                     <h4 class="modal-title">Apakah anda yakin menghapus semua barang? </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.product')  }}';">Delete</button>
                 </div>
             </div>
@@ -98,7 +175,7 @@
                     <h4 class="modal-title">Apakah anda yakin menghapus barang? </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.product')  }}';">Delete</button>
                 </div>
             </div>
@@ -124,6 +201,7 @@
                 <div class="panel-heading" style="padding-bottom:1%;">
                     <span style="font-size: 24px">Daftar Barang</span>
                     <span style="float:right; margin:0">
+                        <button  class="btn btn-success" data-toggle="modal" data-target="#myStokModal2">Tambah Stok</button>
                         <button class="btn btn-primary" onclick="window.location.href='{{ Route('admin.product-add') }}'">Tambah Barang</button>
                         <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteAllModal">Hapus Semua</button>
                     </span>
@@ -151,7 +229,7 @@
                                 <td class="center center-tab">12</td>
                                 <td class="center center-tab">10</td>
                                 <td class="center" style="">
-
+                                    <button  class="btn btn-success" data-toggle="modal" data-target="#myStokModal">Tambah Stok</button>
                                     <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                     <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
@@ -165,7 +243,7 @@
                                 <td class="center center-tab">200</td>
                                 <td class="center center-tab">20</td>
                                 <td class="center" style="">
-
+                                    <button  class="btn btn-success" data-toggle="modal" data-target="#myStokModal">Tambah Stok</button>
                                     <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                     <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
@@ -179,7 +257,7 @@
                                 <td class="center center-tab">140</td>
                                 <td class="center center-tab">20</td>
                                 <td class="center" style="">
-
+                                    <button  class="btn btn-success" data-toggle="modal" data-target="#myStokModal">Tambah Stok</button>
                                     <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                     <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
@@ -193,7 +271,7 @@
                                 <td class="center center-tab">2</td>
                                 <td class="center center-tab">20</td>
                                 <td class="center" style="">
-
+                                    <button  class="btn btn-success" data-toggle="modal" data-target="#myStokModal">Tambah Stok</button>
                                     <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                     <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 
@@ -207,7 +285,7 @@
                                 <td class="center center-tab">10</td>
                                 <td class="center center-tab">7</td>
                                 <td class="center" style="">
-
+                                    <button  class="btn btn-success" data-toggle="modal" data-target="#myStokModal">Tambah Stok</button>
                                     <button class="btn btn-warning edit" data-backdrop="static" data-toggle="modal" data-target="#myEditModal">Edit</button>
                                     <button class="btn btn-danger edit" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Delete</button>
 

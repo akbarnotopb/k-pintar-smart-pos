@@ -28,7 +28,10 @@ Route::name('admin.')->group(function(){
 
     Route::view('/admin/product/add','product.product-add')->name('product-add');
 
-	Route::view('/admin/product/history','product.product-history')->name('product-history');
+	Route::view('/admin/product/history/out','product.product-history-out')->name('product-history-out');
+
+	Route::view('/admin/product/history/in','product.product-history-in')->name('product-history-in');
+
 
 	Route::view('/admin/member','member.member')->name('member');
 

@@ -65,8 +65,9 @@
                         </div>
                     </div>
                     <div class="modal-footer">
+                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success">Save</button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
                     </div>
                 </form>
             </div>
@@ -82,7 +83,7 @@
                     <h4 class="modal-title">Apakah anda yakin menghapus semua member? </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.member')  }}';">Delete</button>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                     <h4 class="modal-title">Apakah anda yakin menghapus member? </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.member')  }}';">Delete</button>
                 </div>
             </div>

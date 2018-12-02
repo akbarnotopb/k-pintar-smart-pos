@@ -66,7 +66,7 @@
                           <p class="text-right" style="font-size: 24px"><strong>Total : Rp.100.000</strong></p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                   
@@ -154,8 +154,8 @@
                               </table>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-dismiss="modal">Batal</button>
-                      <button type="submit" class="btn btn-primary" onclick="window.location.href='{{ Route('admin.history') }}'">Simpan</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Batal</button>
+                      <button type="submit" class="btn btn-success" onclick="window.location.href='{{ Route('admin.history') }}'">Simpan</button>
                     </div>
                   </div>
                   
@@ -173,7 +173,7 @@
                       <h4 class="modal-title">Apakah anda yakin menghapus semua riwayat transaksi? </h4>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.history')  }}';">Delete</button>
                     </div>
                   </div>
@@ -192,7 +192,8 @@
                       <h4 class="modal-title">Apakah anda yakin menghapus transaksi no 1/22/18/1? </h4>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close
+                      </button>
                       <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.history')  }}';">Delete</button>
                     </div>
                   </div>
@@ -215,7 +216,7 @@
                         <div class="panel-heading" style="padding-bottom:1%;">
                             <span style="font-size: 24px">Daftar Transaksi</span>
                             <span style="float:right; margin:0">
-                                <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteModal">Hapus Semua</button>
+                                <button class="btn btn-danger" data-backdrop="static" data-toggle="modal" data-target="#myDeleteAllModal">Hapus Semua</button>
                             </span>
                         </div>
                         <!-- /.panel-heading -->

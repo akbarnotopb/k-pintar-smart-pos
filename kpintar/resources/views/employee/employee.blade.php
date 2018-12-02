@@ -32,13 +32,6 @@
                                 <input type="text" class="form-control" value="Sukirman" placeholder="Username" required>
                             </div>
                         </div>
-                        {{--
-                        <div class="form-group row">
-                            <label class="col-md-4">Password</label>
-                            <div class="col-md-8">
-                                <input type="password" class="form-control" value="passrahasia" placeholder="Password" required>
-                            </div>
-                        </div>--}}
                         <div class="form-group row">
                             <label class="col-md-4">Status</label>
                             <div class="col-md-8">
@@ -72,8 +65,9 @@
                         </div>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-success">Save</button>
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
                     </div>
             </div>
             </form>
@@ -89,7 +83,7 @@
                     <h4 class="modal-title">Apakah anda yakin menghapus semua karyawan? </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.employee')  }}';">Delete</button>
                 </div>
             </div>
@@ -105,7 +99,7 @@
                     <h4 class="modal-title">Apakah anda yakin menghapus karyawan? </h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger" onclick="window.location.href='{{ Route('admin.employee')  }}';">Delete</button>
                 </div>
             </div>

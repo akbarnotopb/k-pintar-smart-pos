@@ -43,5 +43,6 @@ Route::name('admin.')->group(function(){
 
 	Route::view('/admin/kasir','kasir.kasir')->name('kasir');
 
+	Route::view('/admin/login','shared.login')->name('login');
 
 });

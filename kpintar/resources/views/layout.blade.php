@@ -2,7 +2,7 @@
 <html>
 <head>
 	@include('shared.partial.meta')
-	<title>SB Admin 2 - Bootstrap Admin Theme</title>
+	<title>K-pintar Solusi POS Anda</title>
 	@include('shared.partial.stylesheet')
 	@yield('additional-css')
 </head>

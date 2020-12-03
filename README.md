@@ -1,1 +1,3 @@
-k-pintar-smart-pos
+Kasir Pintar - Smart Point Of Sales
+
+Pemenuhan tugas DPPL
